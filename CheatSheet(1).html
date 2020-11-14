@@ -4,12 +4,45 @@
 <meta charset="utf-8">
 <title>Cheat Sheet</title>
 <style>
-  h1 {color:#9900cc}
-  h2 {color: purple}
-  u  {color: #cc0099}
+  h2 {color: #3399CC}
+  u  {color: darkblue}
+
+  dl{
+    list-style-position: outside;
+    list-style-type:decimal;
+
+  }
+  dl.b{list-style-position: outside;
+    list-style-type:square;
+    }
+
+
+  dt{
+
+    font-weight: bold;
+    display:list-item
+
+
+
+  }
+  div{  background-color: powderblue;
+    border: 5px  inset rgb(26, 177, 223);
+    padding:35px;
+
+    font-size: 20px;
+    color: black;
+
+  }
+
+  h1 {
+    font-size: 75px;
+    text-align: center;
+    color:black;
+  }
 </style>
 </head>
 <body>
+<div>
   <h1>Reading Assignment 1: WWW and html</h1>
   <h2>World Wide Web General</h2>
 
@@ -63,8 +96,10 @@
 
 <p><u>How to mark up important text and how is it displayed in the browser?</u></p>
 <p>With the < strong > tag and it's written in bold</p>
-
-  <h1>Rading Assignment 2:</h1>
+</div>
+<p></p>
+<div>
+  <h1>Reading Assignment 2:</h1>
   <h2>Basic Html</h2>
 
 <p><u>What are the components of HTML elements?</u></p>
@@ -189,6 +224,127 @@
   <br>Syntax inside of the style tag: "font-weight:value;".
   <br>Syntax with an attribute: style="font-weight:value"
 </p>
+</div>
 
+<p></p>
+
+<div>
+  <h1>Reading Assignment 3: Lists and Tables</h1>
+  <h2>HTML for Lists</h2>
+  <dl >
+    <dt>Start tags for</dt>
+
+    <dd>an ordered list: < ol ></dd>
+
+    <dd>an unordered list: < ul ></dd>
+
+    <dd>a description list: < dl ></dd>
+
+    <dd>a list item: < li ></dd>
+
+    <dd>a description term: < dt ></dd>
+
+    <dd>a description data: < dd ></dd>
+  </dl>
+  <h2>CSS for Lists</h2>
+  <dl style="list-style-type:square">
+    <dt style="list-style-type:square;" >Make Bullet a square </dt>
+    <dd>Syntax="style="list-style-type:square;""</dd>
+    <dt style="list-style-image: url('my-bullet.png')">Make bullet an image named "my-bullet.png"</dt>
+    <dd>Syntax="style="list-style-image: url('images.jpg')""</dd>
+    <dt style="list-style-type:upper-roman;">Make bullet an uppercase roman number</dt>
+    <dd>Syntax=style="list-style-type:upper-roman;</dd>
+    <dt style="list-style-position: inside;">Set bullet position to be inside the list item's text flow</dt>
+    <dd>Syntax="style="list-style-position: inside;"</dd>
+    <dt style="list-style-position: outside;">Set bullet position to be outside the list item's text flow</dt>
+    <dd>Syntax="style="list-style-position: outside;"</dd>
+  </dl>
+
+  <h2>HTML for tables</h2>
+
+    <dl>
+    <dt >Start tags for:</dt>
+    <dd>a table: < table ></dd>
+    <dd>a table row: < tr></dd>
+    <dd>a table header: < thead></dd>
+    <dd>a table header cell: < th> </dd>
+    <dd>table body: < tbody></dd>
+    <dd>table cell: < td></dd>
+    <dd>table footer: < tfoot></dd>
+    <dd>table footer cell: < tr></dd>
+
+  <h2>CSS for Tables</h2>
+  <dl>
+    <dt>Black dotted border of 1 px width.</dt>
+    <dd>"border: 1px dotted black;"</dd>
+    <dt>Solid border of 1 px width having a red color and rounded corners</dt>
+    <dd>"border: 1px solid red;<br>
+        border-radius: 25px;"</dd>
+    <dt>Merge the borders of table cells so that they appear as one line</dt>
+    <dd>"border-collapse: collapse;"</dd>
+  </dl>
+
+</div>
+<p></p>
+
+<div>
+  <h1>Reading Assignment 4: Advanced CSS</h1>
+  <h2>Box Model</h2>
+  <dl>
+    <dt>Block elements have which kind of characteristics?</dt>
+    <dd></dd>
+
+    <dt>Inline elements have which kind of characteristics?</dt>
+    <dd></dd>
+
+    <dt>What is the margin of an Html element? Where can one find it?</dt>
+    <dd></dd>
+
+    <dt>What is the margin of an Html element? Where can one find it?</dt>
+    <dd></dd>
+
+  </dl>
+
+  <h2>Classes and Ids</h2>
+  <dl>
+    <dt>Write down a selector for a certain class</dt>
+    <dd></dd>
+
+    <dt>Write down a selector for a certain html element of a certain class</dt>
+    <dd></dd>
+
+    <dt>Write down a selector for a certain id</dt>
+    <dd></dd>
+
+    <dt>Write down a selector for a certain html element of a certain id</dt>
+    <dd></dd>
+
+    <dt>Write down the start tag of a certain html element with a specific class.</dt>
+    <dd></dd>
+
+    <dt>Write down the start tag of a certain html element with a specific id.</dt>
+    <dd></dd>
+
+    <dt>Do classes select one or more elements?</dt>
+    <dd></dd>
+
+    <dt>Do ids select one or more elements?</dt>
+    <dd></dd>
+
+    <dt>How often can classes / ids occur on one page?</dt>
+    <dd></dd>
+
+  </dl>
+
+  <h2>Floating</h2>
+  <dl>
+    <dt>Write down the css declaration to make an html element float to the left</dt>
+    <dd></dd>
+
+    <dt>Make an html element stop floating around another (for a specific direction, for all directions)</dt>
+    <dd></dd>
+
+  </dl>
+</div>
 </body>
 </html>
