@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cheat Sheet</title>
+<style>
+  h2 {color: #3399CC}
+  u  {color: darkblue}
+
+  dl{
+    list-style-position: outside;
+    list-style-type:decimal;
+
+  }
+  dl.b{list-style-position: outside;
+    list-style-type:square;
+    }
+
+
+  dt{
+
+    font-weight: bold;
+    display:list-item
+
+
+
+  }
+  div{  background-color: powderblue;
+    border: 5px  inset rgb(26, 177, 223);
+    padding:35px;
+
+    font-size: 20px;
+    color: black;
+
+  }
+
+  h1 {
+    font-size: 75px;
+    text-align: center;
+    color:black;
+  }
+</style>
+</head>
+<body>
+<div>
+  <h1>Reading Assignment 1: WWW and html</h1>
+  <h2>World Wide Web General</h2>
+
+<p><u>What are the most essential technologies that made the World Wide Web such a success?</u></p>
+<p>The Hypertext, hypermedia, HTTP and browsers.</p>
+
+<p><u>How are resources (html pages, images, etc) addressed in the web?</u></p>
+<p>The most common form of URL is the Uniform Resource Locator (URL), which is known as the web address. Any of those URLs can be typed into your browser's address bar to tell it to load the associated page (resource).</p>
+
+<p><u>What are the general components of a url?</u></p>
+<p>A protocol (http), a hostname (www.example.com), and a file name (index.html).</p>
+
+<h2>Web Server</h2>
+
+<p><u>What is a web server?</u><p>
+<p>A web server refers to a server software or hardware dedicated to running said software, which can serve contents to the World Wide Web. It also processes incoming network request</p>
+
+<p><u>What does a web server do?</u></p>
+<p>A web server stores, processes and delivers web pages to clients.<p>
+
+<p><u>How can content be stored on a web server?</u></p>
+<p>Content can be stored using Hypertext Transfer Protocol (HTTP) <p>
+
+<p><u>How is content in webpages decribed?</u></p>
+<p>It's described using an HTML document<p>
+
+<h2>Web Client</h2>
+
+<p><u>What is a web client?</u></p>
+<p>A web client is a software application for accessing information on the World wide web</p>
+
+<p><u>What does a web client</u></p>
+<p>It performs client-side operations as they might need access to information available only on the client side, like user input, or because the server lacks the processing power necessary for such operations.</p>
+
+<p><u>Web Client and Web Browser is the same</u></p>
+<p>No the Browser provides you the links the client makes side operations</p>
+
+<h2>Hello World</h2>
+
+<p><u>What is the html head element</u></p>
+<p>The head element is a container for all the head elements, which can include documents, scripts, meta information etc.</p>
+
+<p><u>What does !DOCTYPE html mean?</u></p>
+<p>It's an instruction to the web browser about what version of HTML the page is written in</p>
+
+<p><u>What are the two top most elements within the html elements</u></p>
+<p>head and body</p>
+
+<p><u>How to emphasize a text and how is it displayed in the browser?</u></p>
+<p>With the < em > tag and it's written in cursive</p>
+
+<p><u>How to mark up important text and how is it displayed in the browser?</u></p>
+<p>With the < strong > tag and it's written in bold</p>
+</div>
+<p></p>
+<div>
+  <h1>Reading Assignment 2:</h1>
+  <h2>Basic Html</h2>
+
+<p><u>What are the components of HTML elements?</u></p>
+<p>An HTML element is defined by a start tag, some content, and an end tag:
+  <br>< tagname >Content goes here...< /tagname >
+</p>
+<p>There are also nested elements like < html >, < body >, < h1 > and < p > these elements can contain other elements.</p>
+<p>Some elements don't have content like < br > these are called void elements.</p>
+
+<p><u>How to identify void elements?</u></p>2
+<p>Empty elements do not have a end tag</p>
+
+<p><u>How to identify attributes</u></p>
+<p>Attributes are always in the start tag of a element examples for attributes are:
+  <br> href in the < a > tag for hyperlinks, src and alt in the < img > tag for source of image and alternate text
+</p>
+
+<p><u>Correct DOCTYPE statement for html 5</u></p>
+<p>< !DOCTYPE html ></p>
+
+<p><u>What are the syntactically correct statements for the following elements?</u></p>
+<p>Article (< article >)
+  <br>Body (< body >)
+  <br>line break (< br >)
+  <br>Headings (< h1 >, ...)
+  <br>Section with meta-information (< head >)
+  <br>Top level element (< html >)
+  <br>Image named Team.jpg (< img src = "Team.jpg" >)
+  <br>Paragraph (< p >)<br>Section (< section >)
+  <br>Label appearing in the title bar (< title >)
+  <br>Link to other pages (< a href=google.com>)
+  <br>Comment < !-- This is a comment -- >
+  <br>Head with title and meta elements
+</p>
+<p>
+  <br>< head >
+  <br>< meta charset="utf-8" >
+  <br>< title >Cheat Sheet< /title >
+  <br>< sstyle >
+  <br>  h1 {color: #9900cc}
+  <br>  h2 {color: purple}
+  <br>  u  {color: #cc0099}
+  <br>< /style >
+  <br>< /head >
+</p>
+
+<h2>CSS</h2>
+
+<p><u>Name the components of a css rule properly</u></p>
+<p>A css rule is build of three components. A selector, a property and a value ( selector{property: value;}).</p>
+<p><u>Use combinators properly: direct child, descendant, adjacent sibling, sibling</u></p>
+<p>  <b>direct child:</b> It selects all elements that are the children of a specified element.(Combinator = >)<br>
+  <b>descendant selector:</b> It matches all elements that are descendants of a specified element.(Combinator = space)<br>
+  <b>adjacent sibling:</b> It  selects all elements that are the adjacent siblings of a specified element.
+  Sibling elements must have the same parent element, and "adjacent" means "immediately following".(Combinator = +)<br>
+  <b>General sibling:</b> It selects all elements that are siblings of a specified element.(Combinator = ~)<br>
+  <b>Syntax:</b>
+  <pre>
+    specified element  Combinator  element
+    {
+      code
+    }
+  </pre>
+</p>
+
+<p><u>Specify colors by color names and in hexadecimal notation</u></p>
+<p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+  <br>All values must be between 00 and FF.
+  <br>A color name is specified with the name of the color(red,blue,powderblue,tomato etc.).
+</p>
+
+<p><u>Declarations for color, background color</u></p>
+<p>You can declare a color or background-color inside the head element with the style element or inside the start tag of a element like h1-h6.<br>The syntax inside of the tag is < p style:"background-color/color:color;" >.</p>
+<p><u>Pseudo classes for the < a > element</u></p>
+<p>a:link = unvisited link(must be the first initialised)
+  <br>a:visited = visited link
+  <br>a:hover = mouse over link
+  <br>a:active = selected link</p>
+<p><u>Declaration for background image</u></p>
+<p>To declare a background image you habe to write "background-image:url("imageName.type");"</p>
+<p><u>Declaration for text alignment (left, right, center, justify)</u></p>
+<p>You can declare a text alignment inside of the style tag or you can declare it inside of an start tag with the style attribute.
+  <br>When you want to declare it inside of the style tag, you can declare it in a class or inside of elements with the Syntax: "text-align: value".
+  <br>When you want to declare it inside of an start tag you can declare it with the attribute style="text-alignment:value".
+</p>
+
+<p><u>Declaration for text decoration (overline, underline, line-through)</u></p>
+  <p>You can declare a text decoration inside of the style tag or you can declare it inside of an start tag with the style attribute.
+  <br>When you want to declare it inside of the style tag, you can declare it in a class or inside of elements with the Syntax: "text-decoration: value".
+  <br>When you want to declare it inside of an start tag you can declare it with the attribute style="text-decoration:value".
+</p>
+
+<p><u>Declaration for text transformation (uppercase, lowercase, capitalize)</u></p>
+<p>You can declare a text transformation inside of the style tag or you can declare it inside of an start tag with the style attribute.
+  <br>When you want to declare it inside of the style tag, you can declare it in a class or inside of elements with the Syntax: "text-transformation: value".
+  <br>When you want to declare it inside of an start tag you can declare it with the attribute style= "text-transformationt:value".
+</p>
+
+<p><u>Identify the difference between serif and sans-serif fonts</u></p>
+<p>Text of the font "Serif" have small lines at the end on some characters and "sans-serif"don´t.</p>
+<p><u>Declarations for font families</u></p>
+<p>You can declare font-families inside of the style tag or you can declare it inside of an start tag with the style attribute.
+  <br>When you want to declare it inside of the style tag, you can declare it in a class or inside of elements with the Syntax: "font-family: Impact, Charcoal, sans-serif;".
+  <br>When you want to declare it inside of an start tag you can declare it with the attribute style= " Impact, Charcoal, sans-serif;"
+</p>
+
+<p><u>Declarations for font style normal and italic</u></p>
+<p>To make the font style italic:
+  <br>Style tag: "font-style:italic;"
+  <br>style attribute: "style="font-style.italic"".
+  <br>The syntax to make it normal is same. You have just to replace italic with normal
+</p>
+
+<p><u>Declarations for font sizes</u></p>
+<p>To change the font size you can declare it like in other points described. To change the size you can use pixel or em.
+  <br>Syntax inside of the style tag: "font-size:value".
+  <br>Syntax with an attribute: style="value".
+</p>
+
+<p><u>Declarations for font weights</u></p>
+<p>To change the font weight you can declare it like in other points described. You can use diffrent values like lighter, bold, normal or a number.
+  <br>Syntax inside of the style tag: "font-weight:value;".
+  <br>Syntax with an attribute: style="font-weight:value"
+</p>
+</div>
+
+<p></p>
+
+<div>
+  <h1>Reading Assignment 3: Lists and Tables</h1>
+  <h2>HTML for Lists</h2>
+  <dl >
+    <dt>Start tags for</dt>
+
+    <dd>an ordered list: < ol ></dd>
+
+    <dd>an unordered list: < ul ></dd>
+
+    <dd>a description list: < dl ></dd>
+
+    <dd>a list item: < li ></dd>
+
+    <dd>a description term: < dt ></dd>
+
+    <dd>a description data: < dd ></dd>
+  </dl>
+  <h2>CSS for Lists</h2>
+  <dl style="list-style-type:square">
+    <dt style="list-style-type:square;" >Make Bullet a square </dt>
+    <dd>Syntax="style="list-style-type:square;""</dd>
+    <dt style="list-style-image: url('my-bullet.png')">Make bullet an image named "my-bullet.png"</dt>
+    <dd>Syntax="style="list-style-image: url('images.jpg')""</dd>
+    <dt style="list-style-type:upper-roman;">Make bullet an uppercase roman number</dt>
+    <dd>Syntax=style="list-style-type:upper-roman;</dd>
+    <dt style="list-style-position: inside;">Set bullet position to be inside the list item's text flow</dt>
+    <dd>Syntax="style="list-style-position: inside;"</dd>
+    <dt style="list-style-position: outside;">Set bullet position to be outside the list item's text flow</dt>
+    <dd>Syntax="style="list-style-position: outside;"</dd>
+  </dl>
+
+  <h2>HTML for tables</h2>
+
+    <dl>
+    <dt >Start tags for:</dt>
+    <dd>a table: < table ></dd>
+    <dd>a table row: < tr></dd>
+    <dd>a table header: < thead></dd>
+    <dd>a table header cell: < th> </dd>
+    <dd>table body: < tbody></dd>
+    <dd>table cell: < td></dd>
+    <dd>table footer: < tfoot></dd>
+    <dd>table footer cell: < tr></dd>
+
+  <h2>CSS for Tables</h2>
+  <dl>
+    <dt>Black dotted border of 1 px width.</dt>
+    <dd>"border: 1px dotted black;"</dd>
+    <dt>Solid border of 1 px width having a red color and rounded corners</dt>
+    <dd>"border: 1px solid red;<br>
+        border-radius: 25px;"</dd>
+    <dt>Merge the borders of table cells so that they appear as one line</dt>
+    <dd>"border-collapse: collapse;"</dd>
+  </dl>
+
+</div>
+<p></p>
+
+<div>
+  <h1>Reading Assignment 4: Advanced CSS</h1>
+  <h2>Box Model</h2>
+  <dl>
+    <dt>Block elements have which kind of characteristics?</dt>
+    <dd></dd>
+
+    <dt>Inline elements have which kind of characteristics?</dt>
+    <dd></dd>
+
+    <dt>What is the margin of an Html element? Where can one find it?</dt>
+    <dd></dd>
+
+    <dt>What is the margin of an Html element? Where can one find it?</dt>
+    <dd></dd>
+
+  </dl>
+
+  <h2>Classes and Ids</h2>
+  <dl>
+    <dt>Write down a selector for a certain class</dt>
+    <dd></dd>
+
+    <dt>Write down a selector for a certain html element of a certain class</dt>
+    <dd></dd>
+
+    <dt>Write down a selector for a certain id</dt>
+    <dd></dd>
+
+    <dt>Write down a selector for a certain html element of a certain id</dt>
+    <dd></dd>
+
+    <dt>Write down the start tag of a certain html element with a specific class.</dt>
+    <dd></dd>
+
+    <dt>Write down the start tag of a certain html element with a specific id.</dt>
+    <dd></dd>
+
+    <dt>Do classes select one or more elements?</dt>
+    <dd></dd>
+
+    <dt>Do ids select one or more elements?</dt>
+    <dd></dd>
+
+    <dt>How often can classes / ids occur on one page?</dt>
+    <dd></dd>
+
+  </dl>
+
+  <h2>Floating</h2>
+  <dl>
+    <dt>Write down the css declaration to make an html element float to the left</dt>
+    <dd></dd>
+
+    <dt>Make an html element stop floating around another (for a specific direction, for all directions)</dt>
+    <dd></dd>
+
+  </dl>
+</div>
+</body>
+</html>
